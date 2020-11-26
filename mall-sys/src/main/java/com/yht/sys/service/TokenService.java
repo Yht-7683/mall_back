@@ -16,4 +16,7 @@ public interface TokenService extends IService<SysUserTokenDO> {
      * @param userId  用户ID
      */
     void logout(long userId);
+
+
+    SysUserTokenDO queryByToken(String token);
 }

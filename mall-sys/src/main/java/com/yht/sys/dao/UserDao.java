@@ -21,4 +21,11 @@ public interface UserDao extends BaseMapper<SysUserDO> {
      */
     List<Long> queryAllMenuId(Long userId);
 
+    /**
+     * 查询用户的所有权限
+     * @param userId  用户ID
+     */
+    List<String> queryAllPerms(Long userId);
+
+
 }

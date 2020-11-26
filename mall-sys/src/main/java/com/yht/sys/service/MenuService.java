@@ -4,6 +4,7 @@ import com.baomidou.mybatisplus.extension.service.IService;
 import com.yht.sys.DO.MenuDO;
 
 import java.util.List;
+import java.util.Set;
 
 /**
  *后台系统菜单的crud
@@ -31,6 +32,10 @@ public interface MenuService extends IService<MenuDO> {
      * 获取用户菜单列表
      */
     List<MenuDO> getUserMenuList(Long userId);
+    /**
+     * 获取用户权限列表
+     */
+    Set<String> getUserPermissions(long userId);
 //
 //    /**
 //     * 删除

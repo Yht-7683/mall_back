@@ -7,12 +7,15 @@ import com.yht.sys.dao.TokenDao;
 import com.yht.sys.service.TokenService;
 import com.yht.sys.utils.JwtUtils;
 import com.yht.sys.utils.Result;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.Date;
 
 @Service
 public class TokenServiceImpl extends ServiceImpl<TokenDao, SysUserTokenDO> implements TokenService {
+    @Autowired
+    private TokenDao tokenDao;
     //12小时后过期
     private final static int EXPIRE = 3600 * 12;
 
@@ -75,5 +78,9 @@ public class TokenServiceImpl extends ServiceImpl<TokenDao, SysUserTokenDO> impl
         tokenDO.setUserId(userId);
         tokenDO.setToken(token);
         this.removeById(tokenDO);
+    }
+    @Override
+    public SysUserTokenDO queryByToken(String token){
+        return tokenDao.queryByToken(token);
     }
 }

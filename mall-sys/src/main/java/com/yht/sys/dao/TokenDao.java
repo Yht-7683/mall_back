@@ -6,4 +6,5 @@ import org.apache.ibatis.annotations.Mapper;
 
 @Mapper
 public interface TokenDao extends BaseMapper<SysUserTokenDO> {
+    SysUserTokenDO queryByToken(String token);
 }

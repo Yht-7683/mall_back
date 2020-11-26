@@ -7,6 +7,7 @@ import com.yht.sys.form.SysLoginForm;
 import com.yht.sys.service.CaptchaService;
 import com.yht.sys.service.TokenService;
 import com.yht.sys.service.UserService;
+import com.yht.sys.utils.JwtUtils;
 import com.yht.sys.utils.Result;
 import org.apache.shiro.crypto.hash.Sha256Hash;
 import org.apache.tomcat.util.http.fileupload.IOUtils;
@@ -18,6 +19,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import javax.imageio.ImageIO;
 import javax.servlet.ServletOutputStream;
+import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
@@ -75,8 +77,8 @@ public class LoginController {
      * 退出
      */
     @PostMapping("/sys/logout")
-    public Result logout(long userId) {
-        tokenService.logout(userId);
+    public Result logout(HttpServletRequest request) {
+        tokenService.logout(JwtUtils.getUserId(request.getHeader("token")));
         return Result.ok();
     }
 

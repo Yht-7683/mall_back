@@ -1,6 +1,7 @@
 package com.yht.sys.DO;
 
 import com.baomidou.mybatisplus.annotation.TableField;
+import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Data;
 
 import java.io.Serializable;
@@ -16,6 +17,7 @@ import java.util.List;
  * @author yht
  */
 @Data
+@TableName("sys_user")
 public class SysUserDO implements Serializable {
     /**
      * 用户ID

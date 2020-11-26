@@ -21,6 +21,7 @@
         <druid.version>1.1.13</druid.version>
         <shiro.version>1.4.0</shiro.version>
         <jwt.version>0.7.0</jwt.version>
+        <commons-lang.version>2.6</commons-lang.version>
 
     </properties>
 
@@ -91,6 +92,11 @@
         <dependency>
             <groupId>javax.validation</groupId>
             <artifactId>validation-api</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>commons-lang</groupId>
+            <artifactId>commons-lang</artifactId>
+            <version>${commons-lang.version}</version>
         </dependency>
         <!--shiro安全框架-->
         <dependency>
