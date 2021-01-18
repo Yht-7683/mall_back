@@ -3,6 +3,7 @@ package com.yht.sys.controller;
 
 
 import com.yht.sys.DO.SysUserDO;
+import com.yht.sys.annotation.MyLog;
 import com.yht.sys.form.SysLoginForm;
 import com.yht.sys.service.CaptchaService;
 import com.yht.sys.service.TokenService;
@@ -36,7 +37,9 @@ public class LoginController {
     private CaptchaService captchaService;
     @Autowired
     private TokenService tokenService;
-    //登录
+    /**
+     * 登录
+     */
     @PostMapping("/sys/login")
     public Result  login(@RequestBody SysLoginForm form)throws IOException {
         boolean captcha = captchaService.validate(form.getUuid(), form.getCaptcha());

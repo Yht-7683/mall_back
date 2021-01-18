@@ -2,11 +2,13 @@ package com.yht.sys.controller;
 
 
 import com.yht.sys.DO.SysUserDO;
+import com.yht.sys.annotation.MyLog;
 import com.yht.sys.service.UserRoleService;
 import com.yht.sys.service.UserService;
 import com.yht.sys.utils.JwtUtils;
 import com.yht.sys.utils.PageUtils;
 import com.yht.sys.utils.Result;
+import org.apache.shiro.crypto.hash.Sha256Hash;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -49,8 +51,9 @@ public class UserController {
     /**
      * 删除用户
      */
+    @MyLog("删除用户")
     @PostMapping("/delete")
-    public Result delete(HttpServletRequest request, @RequestBody List<Long> userIds){
+    public Result delete(@RequestBody List<Long> userIds){
         String token = request.getHeader("token");
         if(userIds.contains(1L)){
             return Result.error("系统管理员不能删除");
@@ -77,6 +80,7 @@ public class UserController {
     /**
      * 修改用户
      */
+    @MyLog("修改用户信息")
     @PostMapping("/update")
     public Result update(HttpServletRequest request,@RequestBody SysUserDO user){
         String token = request.getHeader("token");
@@ -92,12 +96,34 @@ public class UserController {
     /**
      * 保存用户
      */
+    @MyLog("添加用户")
     @PostMapping("/save")
     public Result save(@RequestBody SysUserDO user){
         String token = request.getHeader("token");
         long userId = JwtUtils.getUserId(token);
         user.setCreateUserId(userId);
         userService.saveUser(user);
+        return Result.ok();
+    }
+    /**
+     * 头部菜单，修改自己的密码
+     */
+    @MyLog("修改自己密码")
+    @PostMapping("/password")
+    public Result updatePassword(@RequestBody Map<String,String> map){
+        String password = map.get("password");
+        String newPassword = map.get("newPassword");
+        if(newPassword == null || newPassword == ""){
+            return Result.error("新密码不能为空");
+        }
+        SysUserDO user = userService.selectByUserId(JwtUtils.getUserId(request.getHeader("token")));
+        //sha256加密不可逆带密比较
+        if (user.getPassword().equals(new Sha256Hash(password,user.getSalt()).toHex())){
+            return Result.error("原密码不正确");
+        }
+        //sha256加密
+        String newPassword2 = new Sha256Hash(newPassword, user.getSalt()).toHex();
+        userService.updatePassword(newPassword2,user.getUserId());
         return Result.ok();
     }
 }

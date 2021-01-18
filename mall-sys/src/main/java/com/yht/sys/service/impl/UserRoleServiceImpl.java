@@ -32,4 +32,9 @@ public class UserRoleServiceImpl extends ServiceImpl<UserRoleDao, UserRoleDO> im
             this.save(userRole);
         }
     }
+
+    @Override
+    public int deleteBatch(Long[] roleIds) {
+        return baseMapper.deleteBatch(roleIds);
+    }
 }

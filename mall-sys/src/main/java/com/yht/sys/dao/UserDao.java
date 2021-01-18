@@ -3,6 +3,7 @@ package com.yht.sys.dao;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.yht.sys.DO.SysUserDO;
 import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
@@ -26,6 +27,11 @@ public interface UserDao extends BaseMapper<SysUserDO> {
      * @param userId  用户ID
      */
     List<String> queryAllPerms(Long userId);
+
+    /**
+     * 修改自己的密码
+     */
+    void updatePassword(@Param("password") String password, @Param("id") long id);
 
 
 }

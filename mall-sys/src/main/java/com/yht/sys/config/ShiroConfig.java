@@ -1,6 +1,7 @@
 package com.yht.sys.config;
 
 import com.yht.sys.shiro.MyRealm;
+import org.apache.shiro.authc.AuthenticationToken;
 import org.apache.shiro.mgt.SecurityManager;
 import org.apache.shiro.spring.web.ShiroFilterFactoryBean;
 import org.apache.shiro.web.mgt.DefaultWebSecurityManager;
@@ -12,6 +13,7 @@ import java.util.Map;
 
 @Configuration
 public class ShiroConfig {
+
     /**
      *shirofilter负责拦截请求
      */
@@ -20,11 +22,12 @@ public class ShiroConfig {
         ShiroFilterFactoryBean shiroFilter = new ShiroFilterFactoryBean();
         // 给filter设置安全管理器
         shiroFilter.setSecurityManager(securityManager);
-        //配置系统受限资源
         //配置系统公共资源
         Map<String, String> filterMap = new LinkedHashMap<>();
         filterMap.put("/sys/login","anon");
-        filterMap.put("/**", "anon");
+        filterMap.put("/captcha.jpg","anon");
+        //配置系统受限资源
+//        filterMap.put("/**", "authc");
         shiroFilter.setFilterChainDefinitionMap(filterMap);
 
         return shiroFilter;

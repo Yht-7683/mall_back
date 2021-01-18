@@ -5,6 +5,9 @@ import com.yht.sys.exception.ExcepCode;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * @author yht
+ */
 public class Result extends HashMap<String, Object> {
     public Result() {
         put("code", 0);
@@ -43,7 +46,7 @@ public class Result extends HashMap<String, Object> {
     public static Result ok() {
         return new Result();
     }
-
+    @Override
     public Result put(String key, Object value) {
         super.put(key, value);
         return this;

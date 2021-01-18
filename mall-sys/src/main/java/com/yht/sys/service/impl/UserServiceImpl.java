@@ -1,7 +1,6 @@
 package com.yht.sys.service.impl;
 
 
-import com.baomidou.mybatisplus.core.conditions.query.Query;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.core.toolkit.StringUtils;
@@ -41,7 +40,11 @@ public class UserServiceImpl extends ServiceImpl<UserDao,SysUserDO> implements U
     public PageUtils queryPage(Map<String, Object> map) {
         int pageSize = Integer.parseInt(String.valueOf(map.get("limit")));
         int currPage =  Integer.parseInt(String.valueOf( map.get("page")));
-        IPage<SysUserDO> page = this.page(new Page<>(currPage, pageSize), null);
+        String username = (String)map.get("username");
+//        IPage<SysUserDO> page = this.page(new Page<>(currPage, pageSize), null);
+        IPage<SysUserDO> page = baseMapper.selectPage(new Page<>(currPage, pageSize),
+                new QueryWrapper<SysUserDO>().like(StringUtils.isNotBlank(username),"username", username));
+
 
         return new PageUtils(page);
     }
@@ -54,10 +57,10 @@ public class UserServiceImpl extends ServiceImpl<UserDao,SysUserDO> implements U
         if(StringUtils.isBlank(user.getPassword())){
             user.setPassword(null);
         }else{
+            //sha256加密
             user.setPassword(new Sha256Hash(user.getPassword(), user.getSalt()).toHex());
         }
         this.updateById(user);
-        userRoleService.update();
         userRoleService.saveOrUpdate(user.getUserId(), user.getRoleIdList());
 
     }
@@ -72,5 +75,9 @@ public class UserServiceImpl extends ServiceImpl<UserDao,SysUserDO> implements U
         this.save(user);
         //保存用户与角色关系
         userRoleService.saveOrUpdate(user.getUserId(), user.getRoleIdList());
+    }
+    @Override
+    public void updatePassword(String password, long id){
+        baseMapper.updatePassword(password,id);
     }
 }

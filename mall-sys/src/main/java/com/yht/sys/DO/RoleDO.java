@@ -32,7 +32,9 @@ public class RoleDO {
      * 创建者ID
      */
     private Long createUserId;
-
+    /**
+     * 角色对应权限信息
+     */
     @TableField(exist=false)
     private List<Long> menuIdList;
 

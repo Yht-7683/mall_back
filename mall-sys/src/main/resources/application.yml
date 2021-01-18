@@ -4,8 +4,14 @@ server:
     uri-encoding: UTF-8
     max-threads: 1000
     min-spare-threads: 30
-  port: 8080
+  port: 9000
 spring:
+  application:
+    name: mall-back
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 121.41.91.101:8848
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
     druid:
@@ -64,12 +70,12 @@ spring:
     throw-exception-if-no-handler-found: true
 
 
-#  resources:
-#    add-mappings: false
-
 
 #mybatis
 mybatis-plus:
   mapper-locations: classpath*:/mapper/**/*.xml
-  #实体扫描，多个package用逗号或者分号分隔
-  typeAliasesPackage: io.renren.modules.*.entity
+  global-config:
+    #数据库相关配置
+    db-config:
+      #主键类型  AUTO:"数据库ID自增"
+      id-type: AUTO

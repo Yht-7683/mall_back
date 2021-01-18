@@ -36,9 +36,9 @@ public interface MenuService extends IService<MenuDO> {
      * 获取用户权限列表
      */
     Set<String> getUserPermissions(long userId);
-//
-//    /**
-//     * 删除
-//     */
-//    void delete(Long menuId);
+
+    /**
+     * 修改菜单名字
+     */
+    void update(MenuDO menuDO);
 }

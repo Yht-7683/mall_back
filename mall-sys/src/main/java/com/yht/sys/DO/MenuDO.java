@@ -53,11 +53,6 @@ public class MenuDO implements Serializable{
     private Integer type;
 
     /**
-     * 菜单图标
-     */
-    private String icon;
-
-    /**
      * 排序
      */
     private Integer orderNum;

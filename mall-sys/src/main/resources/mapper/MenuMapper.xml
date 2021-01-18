@@ -5,4 +5,7 @@
     <select id="queryListParentId" resultType="com.yht.sys.DO.MenuDO">
         select * from sys_menu where parent_id = #{parentId} order by order_num asc
     </select>
+    <update id="update" parameterType="com.yht.sys.DO.MenuDO">
+        update sys_menu set name = #{name} where menu_id = #{menuId}
+    </update>
 </mapper>

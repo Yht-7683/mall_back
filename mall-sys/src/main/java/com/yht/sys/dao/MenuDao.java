@@ -14,4 +14,9 @@ public interface MenuDao extends BaseMapper<MenuDO> {
      */
     List<MenuDO> queryListParentId(Long parentId);
 
+    /**
+     * 修改菜单名字
+     */
+    void update(MenuDO menuDO);
+
 }

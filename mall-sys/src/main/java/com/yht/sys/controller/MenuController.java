@@ -7,12 +7,11 @@ import com.yht.sys.utils.JwtUtils;
 import com.yht.sys.utils.Result;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
 import java.util.List;
+import java.util.Map;
 import java.util.Set;
 
 /**
@@ -40,7 +39,6 @@ public class MenuController{
      */
 
     @GetMapping("/list")
-//    @RequiresPermissions("sys:menu:list")
     public List<MenuDO> list(){
         List<MenuDO> menuList = menuService.list();
         for(MenuDO sysMenuEntity : menuList){
@@ -51,5 +49,14 @@ public class MenuController{
         }
 
         return menuList;
+    }
+
+    /**
+     *修改菜单名字
+     */
+    @PostMapping("update")
+    public Result update(@RequestBody MenuDO menuDO){
+        menuService.update(menuDO);
+        return Result.ok();
     }
 }

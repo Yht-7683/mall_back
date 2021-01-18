@@ -44,4 +44,9 @@ public interface UserService extends IService<SysUserDO> {
      * 保存用户
      */
     void saveUser(SysUserDO user);
+
+    /**
+     * 修改自己的密码
+     */
+    void updatePassword(String password, long id);
 }

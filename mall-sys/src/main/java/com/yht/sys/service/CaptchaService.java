@@ -9,7 +9,7 @@ import java.awt.image.BufferedImage;
  * 验证码
  * @author yht
  */
-public interface CaptchaService extends IService<CaptchaDO> {
+public interface CaptchaService {
     /**
      * 获取图片验证码
      */

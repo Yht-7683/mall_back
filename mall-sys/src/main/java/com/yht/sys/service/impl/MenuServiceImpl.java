@@ -28,7 +28,6 @@ public class MenuServiceImpl extends ServiceImpl<MenuDao, MenuDO> implements Men
         if(menuIdList == null){
             return menuList;
         }
-
         List<MenuDO> userMenuList = new ArrayList<>();
         for(MenuDO menu : menuList){
             if(menuIdList.contains(menu.getMenuId())){
@@ -100,5 +99,9 @@ public class MenuServiceImpl extends ServiceImpl<MenuDao, MenuDO> implements Men
         }
 
         return subMenuList;
+    }
+    @Override
+    public void update(MenuDO menuDO){
+        baseMapper.update(menuDO);
     }
 }

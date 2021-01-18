@@ -11,5 +11,12 @@ public interface UserRoleService extends IService<UserRoleDO> {
      */
     List<Long> queryRoleIdList(Long userId);
 
+    /**
+     *添加或者修改功能，先删除在添加
+     */
     void saveOrUpdate(Long userId, List<Long> roleIdList);
+    /**
+     * 根据角色ID数组，批量删除
+     */
+    int deleteBatch(Long[] roleIds);
 }
