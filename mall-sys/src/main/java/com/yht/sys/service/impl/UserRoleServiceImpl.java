@@ -1,7 +1,8 @@
 package com.yht.sys.service.impl;
 
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import com.yht.sys.DO.UserRoleDO;
+
+import com.yht.common.DO.UserRoleDO;
 import com.yht.sys.dao.UserRoleDao;
 import com.yht.sys.service.UserRoleService;
 import org.springframework.stereotype.Service;

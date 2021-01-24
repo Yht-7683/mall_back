@@ -2,12 +2,12 @@ package com.yht.sys.service.impl;
 
 import com.baomidou.mybatisplus.core.toolkit.StringUtils;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import com.yht.sys.DO.MenuDO;
-import com.yht.sys.DO.SysUserDO;
+
+import com.yht.common.DO.MenuDO;
 import com.yht.sys.dao.MenuDao;
 import com.yht.sys.dao.UserDao;
 import com.yht.sys.service.MenuService;
-import com.yht.sys.service.UserService;
+import com.yht.sys.service.SysUserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -17,7 +17,7 @@ import java.util.*;
 @Service
 public class MenuServiceImpl extends ServiceImpl<MenuDao, MenuDO> implements MenuService {
     @Autowired
-    private UserService userService;
+    private SysUserService sysUserService;
     @Autowired
     private MenuDao menuDao;
     @Autowired
@@ -46,7 +46,7 @@ public class MenuServiceImpl extends ServiceImpl<MenuDao, MenuDO> implements Men
             return getAllMenuList(null);
         }
         //用户菜单列表
-        List<Long> menuIdList = userService.queryAllMenuId(userId);
+        List<Long> menuIdList = sysUserService.queryAllMenuId(userId);
         return getAllMenuList(menuIdList);
     }
     /**

@@ -1,7 +1,8 @@
 package com.yht.sys.shiro;
 
-import com.yht.sys.DO.SysUserDO;
-import com.yht.sys.DO.SysUserTokenDO;
+
+import com.yht.common.DO.SysUserDO;
+import com.yht.common.DO.SysUserTokenDO;
 import com.yht.sys.dao.UserDao;
 import com.yht.sys.service.TokenService;
 import org.apache.shiro.authc.*;

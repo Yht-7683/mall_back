@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.yht.mall.product.dao.GoodsStockDao">
+    <select id="searchPage" resultType="com.yht.common.DO.GoodsStockDO">
+        SELECT sku_id, a.goods_id as goods_id ,
+        `name` , price, amount, `status`
+        FROM goods_sku as a
+        LEFT JOIN goods_spu as b ON a.goods_id=b.goods_id
+        <if test="name != null and name != ''" >
+          WHERE `name` LIKE CONCAT('%',#{name},'%')
+        </if>
+    </select>
+    <select id="selectByskuId" resultType="com.yht.common.DO.GoodsStockDO" parameterType="long">
+        SELECT sku_id, a.goods_id as goods_id ,
+        `name` , price, amount, `status`
+        FROM goods_sku as a
+        LEFT JOIN goods_spu as b ON a.goods_id=b.goods_id
+        WHERE sku_id = #{id}
+    </select>
+    <delete id="deleteByGoodsIds" parameterType="list">
+        DELETE FROM goods_sku WHERE 1>2 or goods_id IN
+        <foreach collection="list" item="item"  open="(" separator="," close=")">
+            #{item}
+        </foreach>
+    </delete>
+</mapper>

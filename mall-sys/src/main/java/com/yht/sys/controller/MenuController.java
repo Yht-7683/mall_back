@@ -1,10 +1,11 @@
 package com.yht.sys.controller;
 
 
-import com.yht.sys.DO.MenuDO;
+import com.yht.common.DO.MenuDO;
+import com.yht.common.utils.JwtUtils;
+import com.yht.common.utils.Result;
 import com.yht.sys.service.MenuService;
-import com.yht.sys.utils.JwtUtils;
-import com.yht.sys.utils.Result;
+
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;

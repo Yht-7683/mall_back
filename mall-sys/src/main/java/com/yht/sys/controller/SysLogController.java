@@ -1,10 +1,9 @@
 package com.yht.sys.controller;
 
+import com.yht.common.utils.PageUtils;
+import com.yht.common.utils.Result;
 import com.yht.sys.service.SysLogService;
-import com.yht.sys.utils.PageUtils;
-import com.yht.sys.utils.Result;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;

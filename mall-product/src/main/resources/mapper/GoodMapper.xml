@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.yht.mall.product.dao.GoodsDao">
+    <select id="searchPage" resultType="com.yht.common.DO.GoodsDO">
+      SELECT goods_id, `name`, details,
+      s.classification_id as classification_id,
+      classification_name,
+      img FROM goods_spu as s LEFT JOIN goods_spu_classification as c ON
+       s.classification_id = c.classification_id
+      WHERE
+      <if test="name != null">
+          `name`like CONCAT('%',#{name},'%') AND
+      </if>
+      <if test="classificationName != null and classificationName !='' ">
+          classification_name like #{classificationName} AND
+      </if>
+      1 = 1
+    </select>
+</mapper>

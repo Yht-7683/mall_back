@@ -1,8 +1,10 @@
 package com.yht.sys.service.impl;
 
-import com.yht.sys.DO.CaptchaDO;
-import com.yht.sys.service.CaptchaService;
+import com.yht.common.DO.CaptchaDO;
 import com.yht.sys.utils.RedisUtils;
+
+import com.yht.sys.service.CaptchaService;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import com.google.code.kaptcha.Producer;
 import org.springframework.stereotype.Service;

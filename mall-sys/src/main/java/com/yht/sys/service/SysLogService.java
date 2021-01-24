@@ -1,8 +1,9 @@
 package com.yht.sys.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
-import com.yht.sys.DO.SysLogDO;
-import com.yht.sys.utils.PageUtils;
+import com.yht.common.DO.SysLogDO;
+import com.yht.common.utils.PageUtils;
+
 
 import java.util.Map;
 

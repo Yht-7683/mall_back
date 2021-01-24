@@ -5,16 +5,17 @@ import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.core.toolkit.StringUtils;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import com.yht.sys.DO.SysLogDO;
+import com.yht.common.DO.SysLogDO;
+import com.yht.common.utils.PageUtils;
 import com.yht.sys.dao.SysLogDao;
 import com.yht.sys.service.SysLogService;
-import com.yht.sys.utils.PageUtils;
+
 import org.springframework.stereotype.Service;
 
 import java.util.Map;
 
 @Service
-public class SysLogServiceimpl extends ServiceImpl<SysLogDao,SysLogDO> implements SysLogService{
+public class SysLogServiceimpl extends ServiceImpl<SysLogDao, SysLogDO> implements SysLogService{
     @Override
     public PageUtils queryPage(Map<String, Object> map) {
         int pageSize = Integer.parseInt(String.valueOf(map.get("limit")));

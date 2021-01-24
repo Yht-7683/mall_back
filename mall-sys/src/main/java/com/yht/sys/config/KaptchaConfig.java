@@ -7,6 +7,9 @@ import org.springframework.context.annotation.Configuration;
 
 import java.util.Properties;
 
+/**
+ * 验证码配置
+ */
 @Configuration
 public class KaptchaConfig {
     @Bean

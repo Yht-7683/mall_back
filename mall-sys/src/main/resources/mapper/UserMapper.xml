@@ -3,7 +3,7 @@
 
 <mapper namespace="com.yht.sys.dao.UserDao">
     <!--按用户名字查询用于登录-->
-    <select id="selectByUserName" resultType="com.yht.sys.DO.SysUserDO">
+    <select id="selectByUserName" resultType="com.yht.common.DO.SysUserDO">
         select * from sys_user where username = #{userName}
     </select>
     <!-- 查询用户的所有菜单ID -->

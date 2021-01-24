@@ -1,8 +1,5 @@
 package com.yht.sys.service;
 
-import com.baomidou.mybatisplus.extension.service.IService;
-import com.yht.sys.DO.CaptchaDO;
-
 import java.awt.image.BufferedImage;
 
 /**

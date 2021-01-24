@@ -1,7 +1,8 @@
 package com.yht.sys.service.impl;
 
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import com.yht.sys.DO.RoleMenuDO;
+
+import com.yht.common.DO.RoleMenuDO;
 import com.yht.sys.dao.RoleMenuDao;
 import com.yht.sys.service.RoleMenuService;
 import org.springframework.stereotype.Service;

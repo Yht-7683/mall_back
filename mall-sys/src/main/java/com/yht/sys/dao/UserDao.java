@@ -1,7 +1,8 @@
 package com.yht.sys.dao;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.yht.sys.DO.SysUserDO;
+
+import com.yht.common.DO.SysUserDO;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 

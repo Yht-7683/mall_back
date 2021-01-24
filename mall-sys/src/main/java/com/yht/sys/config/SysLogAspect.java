@@ -1,14 +1,13 @@
 package com.yht.sys.config;
 
-import com.yht.sys.DO.SysLogDO;
+
+import com.yht.common.DO.SysLogDO;
+import com.yht.common.utils.JwtUtils;
 import com.yht.sys.annotation.MyLog;
 import com.yht.sys.service.SysLogService;
-import com.yht.sys.service.UserService;
-import com.yht.sys.utils.JwtUtils;
+import com.yht.sys.service.SysUserService;
 import org.aspectj.lang.JoinPoint;
-import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.AfterReturning;
-import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.reflect.MethodSignature;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,13 +19,16 @@ import javax.servlet.http.HttpServletRequest;
 import java.lang.reflect.Method;
 import java.util.Date;
 
+/**
+ * 日志
+ */
 @Aspect
 @Component
 public class SysLogAspect {
     @Autowired
     private SysLogService sysLogService;
     @Autowired
-    private UserService userService;
+    private SysUserService sysUserService;
 
     @AfterReturning(value = "@annotation(com.yht.sys.annotation.MyLog)")
     public void around(JoinPoint joinPoint){
@@ -34,7 +36,7 @@ public class SysLogAspect {
         //获取用户名
         HttpServletRequest request = ((ServletRequestAttributes) RequestContextHolder.getRequestAttributes()).getRequest();
         Long uid = JwtUtils.getUserId(request.getHeader("token"));
-        String userName = userService.selectByUserId(uid).getUsername();
+        String userName = sysUserService.selectByUserId(uid).getUsername();
         logDO.setUsername(userName);
         //获取操作
         MethodSignature signature = (MethodSignature) joinPoint.getSignature();

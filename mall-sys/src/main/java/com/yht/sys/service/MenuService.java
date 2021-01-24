@@ -1,7 +1,8 @@
 package com.yht.sys.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
-import com.yht.sys.DO.MenuDO;
+import com.yht.common.DO.MenuDO;
+
 
 import java.util.List;
 import java.util.Set;
@@ -18,16 +19,6 @@ public interface MenuService extends IService<MenuDO> {
      */
     List<MenuDO> queryListParentId(Long parentId, List<Long> menuIdList);
 
-//    /**
-//     * 根据父菜单，查询子菜单
-//     */
-//    List<MenuDO> queryListParentId(Long parentId);
-//
-//    /**
-//     * 获取不包含按钮的菜单列表
-//     */
-//    List<MenuDO> queryNotButtonList();
-//
     /**
      * 获取用户菜单列表
      */

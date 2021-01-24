@@ -1,12 +1,13 @@
 package com.yht.sys.controller;
 
-import com.yht.sys.DO.RoleDO;
+
+import com.yht.common.DO.RoleDO;
+import com.yht.common.utils.JwtUtils;
+import com.yht.common.utils.PageUtils;
+import com.yht.common.utils.Result;
 import com.yht.sys.annotation.MyLog;
 import com.yht.sys.service.RoleMenuService;
 import com.yht.sys.service.RoleService;
-import com.yht.sys.utils.JwtUtils;
-import com.yht.sys.utils.PageUtils;
-import com.yht.sys.utils.Result;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

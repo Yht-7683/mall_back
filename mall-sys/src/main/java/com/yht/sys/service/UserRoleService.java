@@ -1,7 +1,8 @@
 package com.yht.sys.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
-import com.yht.sys.DO.UserRoleDO;
+import com.yht.common.DO.UserRoleDO;
+
 
 import java.util.List;
 

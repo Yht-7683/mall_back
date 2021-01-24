@@ -1,7 +1,8 @@
 package com.yht.sys.dao;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.yht.sys.DO.RoleMenuDO;
+
+import com.yht.common.DO.RoleMenuDO;
 import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;

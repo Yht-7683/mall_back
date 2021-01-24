@@ -2,11 +2,12 @@ package com.yht.sys.service.impl;
 
 
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import com.yht.sys.DO.SysUserTokenDO;
+
+import com.yht.common.DO.SysUserTokenDO;
+import com.yht.common.utils.JwtUtils;
+import com.yht.common.utils.Result;
 import com.yht.sys.dao.TokenDao;
 import com.yht.sys.service.TokenService;
-import com.yht.sys.utils.JwtUtils;
-import com.yht.sys.utils.Result;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

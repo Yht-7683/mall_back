@@ -1,8 +1,9 @@
 package com.yht.sys.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
-import com.yht.sys.DO.SysUserTokenDO;
-import com.yht.sys.utils.Result;
+import com.yht.common.DO.SysUserTokenDO;
+import com.yht.common.utils.Result;
+
 
 public interface TokenService extends IService<SysUserTokenDO> {
     /**

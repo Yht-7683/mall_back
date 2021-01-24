@@ -3,7 +3,7 @@
 
 <mapper namespace="com.yht.sys.dao.TokenDao">
 
-    <select id="queryByToken" resultType="com.yht.sys.DO.SysUserTokenDO">
+    <select id="queryByToken" resultType="com.yht.common.DO.SysUserTokenDO">
 		select * from sys_user_token where token = #{value}
 	</select>
 </mapper>

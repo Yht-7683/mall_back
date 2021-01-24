@@ -2,14 +2,14 @@ package com.yht.sys.controller;
 
 
 
-import com.yht.sys.DO.SysUserDO;
-import com.yht.sys.annotation.MyLog;
+
+import com.yht.common.DO.SysUserDO;
+import com.yht.common.utils.JwtUtils;
+import com.yht.common.utils.Result;
 import com.yht.sys.form.SysLoginForm;
 import com.yht.sys.service.CaptchaService;
 import com.yht.sys.service.TokenService;
-import com.yht.sys.service.UserService;
-import com.yht.sys.utils.JwtUtils;
-import com.yht.sys.utils.Result;
+import com.yht.sys.service.SysUserService;
 import org.apache.shiro.crypto.hash.Sha256Hash;
 import org.apache.tomcat.util.http.fileupload.IOUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -32,7 +32,7 @@ import java.io.IOException;
 @RestController
 public class LoginController {
     @Autowired
-    private UserService userService;
+    private SysUserService sysUserService;
     @Autowired
     private CaptchaService captchaService;
     @Autowired
@@ -47,7 +47,7 @@ public class LoginController {
             return Result.error("验证码过不正确或已过期");
         }
         //获取用户信息
-        SysUserDO user = userService.selectByUserName(form.getUsername());
+        SysUserDO user = sysUserService.selectByUserName(form.getUsername());
         // 账号不存在、密码错误。密码由shiro的散列算法加密带密比较
         if(user == null || !user.getPassword().equals(new Sha256Hash(form.getPassword(), user.getSalt()).toHex())) {
             return Result.error("账号或密码不正确");

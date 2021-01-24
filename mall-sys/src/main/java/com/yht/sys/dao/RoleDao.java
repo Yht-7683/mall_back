@@ -1,7 +1,8 @@
 package com.yht.sys.dao;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.yht.sys.DO.RoleDO;
+
+import com.yht.common.DO.RoleDO;
 import org.apache.ibatis.annotations.Mapper;
 
 @Mapper
