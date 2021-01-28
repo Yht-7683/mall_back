@@ -8,6 +8,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="mall-common" />
+        <module name="mall-gateway" />
         <module name="mall-order" />
         <module name="mall-product" />
         <module name="mall-sys" />

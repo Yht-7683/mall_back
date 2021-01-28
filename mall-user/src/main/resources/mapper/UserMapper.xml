@@ -3,6 +3,9 @@
 
 <mapper namespace="com.yht.malluser.dao.UserDao">
     <update id="updatePassword">
-		update sys_user set password = #{password} where user_id = #{id}
+		update mall_user set password = #{password} where user_id = #{id}
 	</update>
+	<select id="selectByUserName" resultType="com.yht.common.DO.UserDO">
+        select * from mall_user where username = #{userName}
+    </select>
 </mapper>

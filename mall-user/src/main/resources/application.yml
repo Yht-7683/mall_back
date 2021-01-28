@@ -55,7 +55,7 @@ spring:
       max-request-size: 100MB
       enabled: true
   redis:
-    database: 0
+    database: 1  #使用的数据库与sys模块区分开
     host: 121.41.91.101
     port: 6379
     password:    # 密码（默认为空）

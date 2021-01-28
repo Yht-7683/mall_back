@@ -1,12 +1,16 @@
 package com.yht.malluser.controller;
 
+import com.yht.common.DO.SysUserDO;
 import com.yht.common.DO.UserDO;
+import com.yht.common.utils.JwtUtils;
 import com.yht.common.utils.PageUtils;
 import com.yht.common.utils.Result;
 import com.yht.malluser.service.UserService;
+import org.apache.shiro.crypto.hash.Sha256Hash;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import javax.servlet.http.HttpServletRequest;
 import java.util.List;
 import java.util.Map;
 /**
@@ -62,6 +66,35 @@ public class UserController {
             return Result.error("root用户不能删除");
         }
         userService.deleteByIds(userIds);
+        return Result.ok();
+    }
+    /**
+     * 获取登录的用户信息
+     */
+    @GetMapping("/info")
+    public Result info(HttpServletRequest request){
+        UserDO user = userService.selectByUserId(JwtUtils.getUserId(request.getHeader("token")));
+        return Result.ok().put("user",user);
+    }
+
+    /**
+     * 修改自己密码
+     */
+    @PostMapping("/password")
+    public Result updatePassword(HttpServletRequest request,@RequestBody Map<String,String> map){
+        String password = map.get("password");
+        String newPassword = map.get("newPassword");
+        if(newPassword == null || newPassword == ""){
+            return Result.error("新密码不能为空");
+        }
+        UserDO user = userService.selectByUserId(JwtUtils.getUserId(request.getHeader("token")));
+        //sha256加密不可逆带密比较
+        if (!user.getPassword().equals(new Sha256Hash(password,user.getSalt()).toHex())){
+            return Result.error("原密码不正确");
+        }
+        //sha256加密
+        String newPassword2 = new Sha256Hash(newPassword, user.getSalt()).toHex();
+        userService.updatePassword(newPassword2,user.getUserId());
         return Result.ok();
     }
 }

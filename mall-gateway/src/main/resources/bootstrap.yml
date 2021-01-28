@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: mall-gateway
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 121.41.91.101:8848
+

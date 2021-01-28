@@ -2,6 +2,7 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <mapper namespace="com.yht.mall.product.dao.GoodsDao">
+    <!--商品信息-->
     <select id="searchPage" resultType="com.yht.common.DO.GoodsDO">
       SELECT goods_id, `name`, details,
       s.classification_id as classification_id,

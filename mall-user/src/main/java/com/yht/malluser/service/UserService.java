@@ -1,6 +1,7 @@
 package com.yht.malluser.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.yht.common.DO.SysUserDO;
 import com.yht.common.DO.UserDO;
 import com.yht.common.utils.PageUtils;
 
@@ -12,7 +13,10 @@ import java.util.Map;
  * @author yht
  */
 public interface UserService extends IService<UserDO> {
-
+    /**
+     * 按照用户名查找（登录操作）
+     */
+    UserDO selectByUserName(String userName);
     /**
      * 查询所有用户
      */

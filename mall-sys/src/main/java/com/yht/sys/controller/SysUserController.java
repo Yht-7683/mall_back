@@ -119,7 +119,7 @@ public class SysUserController {
         }
         SysUserDO user = sysUserService.selectByUserId(JwtUtils.getUserId(request.getHeader("token")));
         //sha256加密不可逆带密比较
-        if (user.getPassword().equals(new Sha256Hash(password,user.getSalt()).toHex())){
+        if (!user.getPassword().equals(new Sha256Hash(password,user.getSalt()).toHex())){
             return Result.error("原密码不正确");
         }
         //sha256加密

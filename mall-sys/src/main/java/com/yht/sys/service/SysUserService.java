@@ -13,7 +13,7 @@ import java.util.Map;
  */
 public interface SysUserService extends IService<SysUserDO> {
     /**
-     * 按照用户面查找
+     * 按照用户名查找（登录操作）
      */
     SysUserDO selectByUserName(String userName);
 

@@ -9,12 +9,12 @@ import java.io.Serializable;
 import java.util.Date;
 
 /**
- * 后台用户token实体类
+ * 商城用户token实体类
  * @author yht
  */
 @Data
-@TableName("sys_user_token")
-public class SysUserTokenDO implements Serializable {
+@TableName("mall_user_token")
+public class MallUserTokenDO implements Serializable {
     //用户ID
     @TableId(type = IdType.INPUT)
     private Long userId;

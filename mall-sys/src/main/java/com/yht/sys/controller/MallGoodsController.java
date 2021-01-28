@@ -94,7 +94,7 @@ public class MallGoodsController {
             } catch (IOException e) {
                 e.printStackTrace();
             }
-            String img = "http:121.41.91.101:2333/img"+fileName;
+            String img = "http://121.41.91.101:2333/img/"+fileName;
             return Result.ok().put("img",img);
         }
     }

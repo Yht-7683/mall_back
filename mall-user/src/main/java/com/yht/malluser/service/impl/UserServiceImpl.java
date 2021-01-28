@@ -20,6 +20,11 @@ import java.util.Map;
 @Service
 public class UserServiceImpl extends ServiceImpl<UserDao, UserDO> implements UserService {
     @Override
+    public UserDO selectByUserName(String userName) {
+        return baseMapper.selectByUserName(userName);
+    }
+
+    @Override
     public PageUtils queryPage(Map<String, Object> map) {
         int pageSize = Integer.parseInt(String.valueOf(map.get("limit")));
         int currPage =  Integer.parseInt(String.valueOf( map.get("page")));
