@@ -98,4 +98,18 @@ public class GoodsController {
         }
     }
 
+    /**
+     * 按照不同类别列出商品信息（前台系统）
+     */
+    @GetMapping("/select")
+    public Result select(@RequestParam String classificationName){
+        List<Map<String, Object>> list = goodsService.listByClass(classificationName);
+        return Result.ok().put("list",list);
+    }
+    @GetMapping("/detail")
+    public  Result detail(@RequestParam Long goodsId){
+        Map<String, Object> map = goodsService.detail(goodsId);
+        return Result.ok().put("map",map);
+    }
 }
+

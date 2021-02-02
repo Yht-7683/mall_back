@@ -24,4 +24,12 @@
             #{item}
         </foreach>
     </delete>
+    <!--获取当前库存-->
+    <select id="getGoodsAmount" resultType="long">
+        SELECT amount FROM goods_sku WHERE sku_id = #{skuId}
+    </select>
+    <!--修改库存-->
+    <update id="updateGoodsAmount">
+        UPDATE goods_sku SET amount = #{amount} WHERE sku_id = #{skuId}
+    </update>
 </mapper>

@@ -24,5 +24,13 @@ public interface GoodsStockDao extends BaseMapper<GoodsStockDO> {
      * 按照商品id批量删除
      */
     void deleteByGoodsIds(List<Long> ids);
+    /**
+     * 获取当前库存
+     */
+    Long getGoodsAmount(@Param("skuId") Long skuId);
+    /**
+     * 修改库存
+     */
+    void updateGoodsAmount(@Param("skuId") Long skuId,@Param("amount") Long amount);
 
 }

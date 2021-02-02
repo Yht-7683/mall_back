@@ -6,6 +6,7 @@ import lombok.Data;
 
 import java.math.BigDecimal;
 import java.util.Date;
+import java.util.List;
 
 /**
  * 订单实体类
@@ -50,5 +51,6 @@ public class OrderInfoDO {
      * 其他说明
      */
     private String other;
+
 
 }

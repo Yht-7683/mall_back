@@ -18,4 +18,18 @@
       </if>
       1 = 1
     </select>
+
+     <!--按照不同类别列出商品信息（前台系统）-->
+    <select id="listByClass" resultType="hashmap">
+        SELECT p.goods_id as goodsId, `name`, classification_name, price, img
+        FROM goods_spu as p,goods_sku as k , goods_spu_classification as c
+        WHERE p.goods_id = k.goods_id AND p.classification_id= c.classification_id
+        AND k.status = 1
+        AND classification_name = #{classificationName}
+    </select>
+    <select id="detail" resultType="hashmap">
+        SELECT p.goods_id as goodsId,`name`, price, img,details, price, amount, sku_id as skuId
+        FROM goods_spu as p, goods_sku as k
+        WHERE p.goods_id = #{goodsId} AND p.goods_id = k.goods_id
+    </select>
 </mapper>

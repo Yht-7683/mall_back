@@ -54,4 +54,14 @@ public class GoodsServiceImpl extends ServiceImpl<GoodsDao, GoodsDO> implements 
     public GoodsDO selectByGoodsId(Long id) {
         return baseMapper.selectById(id);
     }
+
+    @Override
+    public List<Map<String, Object>> listByClass(String classificationName) {
+        return baseMapper.listByClass(classificationName);
+    }
+
+    @Override
+    public Map<String, Object> detail(Long goodsId) {
+        return baseMapper.detail(goodsId);
+    }
 }

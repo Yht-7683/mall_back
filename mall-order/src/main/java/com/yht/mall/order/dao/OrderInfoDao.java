@@ -15,5 +15,9 @@ public interface OrderInfoDao extends BaseMapper<OrderInfoDO> {
      * 分页查找
      */
     IPage<OrderInfoDO> searchPage(IPage<OrderInfoDO> page, @Param("username") String username);
+    /**
+     * 分页查找当前用户
+     */
+    IPage<OrderInfoDO> searchUserPage(IPage<OrderInfoDO> page, @Param("userId") Long userId);
 
 }

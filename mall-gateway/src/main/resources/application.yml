@@ -13,20 +13,16 @@ spring:
           predicates:
             - Path=/user/**
 
-#
-#        - id: third_party_route
-#          uri: lb://gulimall-third-party
-#          predicates:
-#            - Path=/api/thirdparty/**
-#          filters:
-#            - RewritePath=/api/thirdparty/(?<segment>/?.*),/$\{segment}
-#
-#        - id: member_route
-#          uri: lb://gulimall-member
-#          predicates:
-#            - Path=/api/member/**
-#          filters:
-#            - RewritePath=/api/(?<segment>/?.*),/$\{segment}
+
+        - id: mall-product
+          uri: http://localhost:9001
+          predicates:
+            - Path=/mall/goods/**
+
+        - id: mall-order
+          uri: http://localhost:9003
+          predicates:
+            - Path=/mall/**
 #
 #        - id: ware_route
 #          uri: lb://gulimall-ware

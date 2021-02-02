@@ -33,4 +33,13 @@ public interface GoodsStockService extends IService<GoodsStockDO> {
      *  添加初始商品库存信息（都为0）
      */
     void saveStock(Long goodsId);
+
+    /**
+     * 下单前查询库存
+     */
+    Long getGoodsAmount(Long skuId);
+    /**
+     * 购买后修改库存数量
+     */
+    void updataGoodsAmount(Long amount, Long skuId);
 }

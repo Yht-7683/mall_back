@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yht.mall.order.dao.CartDao">
+    <select id="listCart" resultType="com.yht.common.DO.CartDO">
+      SELECT cart_id as cartId, c.amount,`name`,img,price, c.sku_id as skuId
+      FROM order_cart as c
+      LEFT JOIN goods_sku as k ON k.sku_id = c.sku_id
+      LEFT JOIN goods_spu as p ON p.goods_id = k.goods_id
+      WHERE user_id =#{userId} ;
+    </select>
+    <update id="updateAmount">
+        update order_cart set amount = #{amount} where sku_id = #{skuId} and user_id = #{userId}
+    </update>
+</mapper>

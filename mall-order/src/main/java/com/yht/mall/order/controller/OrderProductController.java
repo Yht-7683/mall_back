@@ -16,7 +16,7 @@ public class OrderProductController {
     @Autowired
     private OrderProductService orderProductService;
     @GetMapping("list/{orderId}")
-    public Result list(@PathVariable("orderId") Long orderId){
+    public Result list(@PathVariable("orderId") String orderId){
         Map<String,Object> map = new HashMap<>(1);
         map.put("order_id",orderId);
         List<OrderProductDO> list = orderProductService.listByMap(map);

@@ -1,15 +1,18 @@
 package com.yht.mall.order.controller;
 
+import com.yht.common.DO.OrderInfoDO;
+import com.yht.common.utils.JwtUtils;
 import com.yht.common.utils.PageUtils;
 import com.yht.common.utils.Result;
 import com.yht.mall.order.service.OrderInfoService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
+import javax.servlet.http.HttpServletRequest;
+import java.util.Date;
+import java.util.List;
 import java.util.Map;
+import java.util.UUID;
 
 /**
  * 订单总体
@@ -26,5 +29,34 @@ public class OrderInfoController {
     public Result queryPage(@RequestParam Map<String, Object> params) {
         PageUtils page = orderInfoService.queryPage(params);
         return Result.ok().put("page", page);
+    }
+    /**
+     * 查询自己的订单
+     */
+    @GetMapping("/select")
+    public Result select(HttpServletRequest request, @RequestParam Map<String, Object> params){
+        Long userId = JwtUtils.getUserId(request.getHeader("token"));
+        params.put("userId",userId);
+        PageUtils page = orderInfoService.select(params);
+        return Result.ok().put("page", page);
+    }
+
+    /**
+     * 购物车下单生成订单操作
+     */
+    @PostMapping("/save")
+    public Result save(HttpServletRequest request, @RequestBody Map<String, Object> map){
+        Long userId = JwtUtils.getUserId(request.getHeader("token"));
+        map.put("userId",userId);
+        return orderInfoService.saveOrder(map);
+    }
+    /**
+     * 商品界面购买生成订单
+     */
+    @PostMapping("/buy")
+    public Result buy(HttpServletRequest request, @RequestBody Map<String, Object> map){
+        Long userId = JwtUtils.getUserId(request.getHeader("token"));
+        map.put("userId",userId);
+        return orderInfoService.saveGoodsOrder(map);
     }
 }

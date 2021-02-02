@@ -44,4 +44,19 @@ public class GoodsStockController {
         goodsStockService.update(stock);
         return Result.ok();
     }
+    /**
+     * 下单前查询库存量
+     */
+    @PostMapping("/getAmount")
+    public Long getGoods(@RequestParam Long skuId){
+        return goodsStockService.getGoodsAmount(skuId);
+    }
+    /**
+     * 购买成功修改库存数量
+     */
+    @PostMapping("/updateAmount")
+    public Result update(@RequestParam("skuId") Long skuId,@RequestParam("amount") Long amount){
+        goodsStockService.updataGoodsAmount(skuId,amount);
+        return Result.ok();
+    }
 }

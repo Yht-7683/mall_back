@@ -48,4 +48,14 @@ public class GoodsStockServiceImpl extends ServiceImpl<GoodsStockDao, GoodsStock
         stock.setGoodsId(goodsId);
         this.save(stock);
     }
+
+    @Override
+    public Long getGoodsAmount(Long skuId) {
+        return baseMapper.getGoodsAmount(skuId);
+    }
+
+    @Override
+    public void updataGoodsAmount(Long skuId,Long amount) {
+        baseMapper.updateGoodsAmount(skuId,amount);
+    }
 }

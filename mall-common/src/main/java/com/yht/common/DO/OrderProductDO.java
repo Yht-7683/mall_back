@@ -19,7 +19,7 @@ public class OrderProductDO {
     /**
      * 订单编号
      */
-    private Long orderId;
+    private String orderId;
 
     private Long skuId;
     /**
@@ -31,7 +31,7 @@ public class OrderProductDO {
      */
     private Long goodsAmount;
     /**
-     * 购买时的价格
+     * 购买时的单价
      */
     private BigDecimal goodsPrice;
 }

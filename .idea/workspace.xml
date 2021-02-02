@@ -4,55 +4,39 @@
     <option name="GROUP_BY_SEVERITY" value="true" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="103776b3-1763-4dcb-a2e9-225ab68d30ee" name="默认更改列表" comment="all">
-      <change afterPath="$PROJECT_DIR$/mall-common/src/main/java/com/yht/common/DO/MallUserTokenDO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-gateway/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-gateway/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-gateway/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-gateway/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-gateway/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-gateway/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-gateway/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-gateway/src/main/java/mallgateway/gateway/GatewayApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-gateway/src/main/java/mallgateway/gateway/config/MallCorsConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-gateway/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-gateway/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-gateway/src/test/java/mallgateway/gateway/GatewayApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-user/src/main/java/com/yht/malluser/config/KaptchaConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-user/src/main/java/com/yht/malluser/controller/LoginController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-user/src/main/java/com/yht/malluser/dao/TokenDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-user/src/main/java/com/yht/malluser/form/LoginForm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-user/src/main/java/com/yht/malluser/service/CaptchaService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-user/src/main/java/com/yht/malluser/service/TokenService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-user/src/main/java/com/yht/malluser/service/impl/CaptchaServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-user/src/main/java/com/yht/malluser/service/impl/TokenServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-user/src/main/java/com/yht/malluser/utils/RedisUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-user/src/main/resources/mapper/TokenMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="103776b3-1763-4dcb-a2e9-225ab68d30ee" name="默认更改列表" comment="">
+      <change afterPath="$PROJECT_DIR$/mall-common/src/main/java/com/yht/common/DO/CartDO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-order/src/main/java/com/yht/mall/order/config/MybatisPlusConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-order/src/main/java/com/yht/mall/order/controller/CartController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-order/src/main/java/com/yht/mall/order/dao/CartDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-order/src/main/java/com/yht/mall/order/service/CartService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-order/src/main/java/com/yht/mall/order/service/OrderGoodsStockService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-order/src/main/java/com/yht/mall/order/service/impl/CartServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-order/src/main/resources/mapper/CartMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-product/src/main/java/com/yht/mall/product/config/MybatisPlusConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-user/src/main/java/com/yht/malluser/config/MybatisPlusConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-common/src/main/java/com/yht/common/DO/SysUserTokenDO.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-common/src/main/java/com/yht/common/DO/SysUserTokenDO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-order/src/main/resources/Mapper/OrderInfoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-order/src/main/resources/mapper/OrderInfoMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-common/src/main/java/com/yht/common/DO/OrderInfoDO.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-common/src/main/java/com/yht/common/DO/OrderInfoDO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-common/src/main/java/com/yht/common/DO/OrderProductDO.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-common/src/main/java/com/yht/common/DO/OrderProductDO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-gateway/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-order/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-order/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-order/src/main/java/com/yht/mall/order/MallOrderApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-order/src/main/java/com/yht/mall/order/MallOrderApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-order/src/main/java/com/yht/mall/order/controller/OrderInfoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-order/src/main/java/com/yht/mall/order/controller/OrderInfoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-order/src/main/java/com/yht/mall/order/controller/OrderProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-order/src/main/java/com/yht/mall/order/controller/OrderProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-order/src/main/java/com/yht/mall/order/dao/OrderInfoDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-order/src/main/java/com/yht/mall/order/dao/OrderInfoDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-order/src/main/java/com/yht/mall/order/service/OrderInfoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-order/src/main/java/com/yht/mall/order/service/OrderInfoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-order/src/main/java/com/yht/mall/order/service/impl/OrderInfoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-order/src/main/java/com/yht/mall/order/service/impl/OrderInfoServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-order/src/main/resources/mapper/OrderInfoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-order/src/main/resources/mapper/OrderInfoMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-product/src/main/java/com/yht/mall/product/controller/GoodsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-product/src/main/java/com/yht/mall/product/controller/GoodsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-product/src/main/java/com/yht/mall/product/controller/GoodsStockController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-product/src/main/java/com/yht/mall/product/controller/GoodsStockController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-product/src/main/java/com/yht/mall/product/dao/GoodsDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-product/src/main/java/com/yht/mall/product/dao/GoodsDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-product/src/main/java/com/yht/mall/product/dao/GoodsStockDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-product/src/main/java/com/yht/mall/product/dao/GoodsStockDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-product/src/main/java/com/yht/mall/product/service/GoodsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-product/src/main/java/com/yht/mall/product/service/GoodsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-product/src/main/java/com/yht/mall/product/service/GoodsStockService.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-product/src/main/java/com/yht/mall/product/service/GoodsStockService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-product/src/main/java/com/yht/mall/product/service/impl/GoodsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-product/src/main/java/com/yht/mall/product/service/impl/GoodsServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-product/src/main/java/com/yht/mall/product/service/impl/GoodsStockServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-product/src/main/java/com/yht/mall/product/service/impl/GoodsStockServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/mapper/GoodMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-product/src/main/resources/mapper/GoodMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-sys/src/main/java/com/yht/sys/controller/AbstractController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-sys/src/main/java/com/yht/sys/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-sys/src/main/java/com/yht/sys/controller/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-sys/src/main/java/com/yht/sys/controller/MallGoodsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-sys/src/main/java/com/yht/sys/controller/MallGoodsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-sys/src/main/java/com/yht/sys/controller/SysUserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-sys/src/main/java/com/yht/sys/controller/SysUserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-sys/src/main/java/com/yht/sys/service/SysUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-sys/src/main/java/com/yht/sys/service/SysUserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-sys/src/main/java/com/yht/sys/utils/RedisUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-sys/src/main/java/com/yht/sys/utils/RedisUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-user/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-user/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-user/src/main/java/com/yht/malluser/controller/GoodsController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-user/src/main/java/com/yht/malluser/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-user/src/main/java/com/yht/malluser/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-user/src/main/java/com/yht/malluser/dao/GoodsDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-user/src/main/java/com/yht/malluser/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-user/src/main/java/com/yht/malluser/dao/UserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-user/src/main/java/com/yht/malluser/service/GoodsService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-user/src/main/java/com/yht/malluser/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-user/src/main/java/com/yht/malluser/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-user/src/main/java/com/yht/malluser/service/impl/GoodsServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-user/src/main/java/com/yht/malluser/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-user/src/main/java/com/yht/malluser/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-user/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-user/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-user/src/main/resources/mapper/GoodMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-user/src/main/resources/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-user/src/main/resources/mapper/UserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/mapper/GoodsStock.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-product/src/main/resources/mapper/GoodsStock.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -86,7 +70,7 @@
     <session id="-2129334514">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="49" />
+          <entry key="project.closed" value="53" />
           <entry key="project.open.time.1" value="4" />
           <entry key="project.open.time.11" value="2" />
           <entry key="project.open.time.13" value="1" />
@@ -96,14 +80,15 @@
           <entry key="project.open.time.19" value="1" />
           <entry key="project.open.time.190" value="1" />
           <entry key="project.open.time.2" value="3" />
-          <entry key="project.open.time.20" value="1" />
+          <entry key="project.open.time.20" value="2" />
+          <entry key="project.open.time.21" value="1" />
           <entry key="project.open.time.22" value="1" />
           <entry key="project.open.time.23" value="2" />
           <entry key="project.open.time.24" value="1" />
           <entry key="project.open.time.28" value="2" />
           <entry key="project.open.time.29" value="1" />
           <entry key="project.open.time.3" value="8" />
-          <entry key="project.open.time.31" value="1" />
+          <entry key="project.open.time.31" value="2" />
           <entry key="project.open.time.33" value="2" />
           <entry key="project.open.time.34" value="2" />
           <entry key="project.open.time.37" value="1" />
@@ -111,9 +96,11 @@
           <entry key="project.open.time.40" value="1" />
           <entry key="project.open.time.5" value="5" />
           <entry key="project.open.time.6" value="6" />
+          <entry key="project.open.time.62" value="1" />
+          <entry key="project.open.time.65" value="1" />
           <entry key="project.open.time.7" value="2" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="55" />
+          <entry key="project.opened" value="60" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -121,49 +108,49 @@
           <entry key="Autowired" value="1" />
           <entry key="CaptchaServiceImpl" value="1" />
           <entry key="MenuServiceImpl" value="1" />
-          <entry key="class" value="75" />
-          <entry key="cmd" value="2" />
+          <entry key="class" value="83" />
+          <entry key="cmd" value="3" />
           <entry key="gitignore" value="1" />
-          <entry key="java" value="818" />
+          <entry key="java" value="989" />
           <entry key="jpg" value="1" />
           <entry key="pom" value="6" />
           <entry key="properties" value="14" />
           <entry key="txt" value="9" />
-          <entry key="xml" value="130" />
+          <entry key="xml" value="156" />
           <entry key="xsd" value="1" />
-          <entry key="yml" value="33" />
+          <entry key="yml" value="35" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="75" />
+          <entry key="CLASS" value="83" />
           <entry key="Image" value="1" />
-          <entry key="JAVA" value="818" />
-          <entry key="PLAIN_TEXT" value="12" />
+          <entry key="JAVA" value="989" />
+          <entry key="PLAIN_TEXT" value="13" />
           <entry key="Properties" value="14" />
           <entry key="UML" value="3" />
-          <entry key="XML" value="137" />
-          <entry key="YAML" value="33" />
+          <entry key="XML" value="163" />
+          <entry key="YAML" value="35" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="dummy" value="25" />
-          <entry key="java" value="9202" />
+          <entry key="dummy" value="31" />
+          <entry key="java" value="12599" />
           <entry key="properties" value="53" />
           <entry key="txt" value="37" />
-          <entry key="xml" value="1084" />
-          <entry key="yml" value="199" />
+          <entry key="xml" value="1540" />
+          <entry key="yml" value="245" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="9202" />
-          <entry key="PLAIN_TEXT" value="62" />
+          <entry key="JAVA" value="12599" />
+          <entry key="PLAIN_TEXT" value="68" />
           <entry key="Properties" value="53" />
-          <entry key="SQL" value="44" />
-          <entry key="XML" value="1040" />
-          <entry key="YAML" value="199" />
+          <entry key="SQL" value="74" />
+          <entry key="XML" value="1466" />
+          <entry key="YAML" value="245" />
         </counts>
       </usages-collector>
     </session>
@@ -174,83 +161,46 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mall-sys/src/main/java/com/yht/sys/dao/UserDao.java">
+        <entry file="file://$PROJECT_DIR$/mall-order/src/main/java/com/yht/mall/order/service/impl/OrderInfoServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="675">
-              <caret line="31" selection-start-line="31" selection-end-line="34" selection-end-column="82" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/mall-sys/src/main/java/com/yht/sys/controller/SysUserController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="293">
-              <caret line="93" column="22" selection-start-line="93" selection-start-column="8" selection-end-line="93" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mall-user/src/main/java/com/yht/malluser/MallUserApplication.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mall-user/src/main/java/com/yht/malluser/controller/UserController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="203">
-              <caret line="91" column="13" selection-start-line="91" selection-start-column="13" selection-end-line="91" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mall-user/src/main/java/com/yht/malluser/config/KaptchaConfig.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="229">
-              <caret line="18" column="64" selection-start-line="18" selection-start-column="64" selection-end-line="18" selection-end-column="64" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mall-sys/src/main/java/com/yht/sys/controller/LoginController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="837">
-              <caret line="51" column="29" selection-start-line="51" selection-start-column="29" selection-end-line="51" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mall-user/src/main/java/com/yht/malluser/service/UserService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1026">
-              <caret line="45" column="11" selection-start-line="45" selection-start-column="11" selection-end-line="45" selection-end-column="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mall-sys/src/main/java/com/yht/sys/service/impl/SysUserServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="57" column="20" lean-forward="true" selection-start-line="57" selection-start-column="20" selection-end-line="57" selection-end-column="20" />
+            <state relative-caret-position="278">
+              <caret line="126" column="61" selection-start-line="126" selection-start-column="61" selection-end-line="126" selection-end-column="61" />
               <folding>
-                <element signature="e#1085#1086#0" expanded="true" />
-                <element signature="e#1145#1146#0" expanded="true" />
-                <element signature="e#1205#1206#0" expanded="true" />
-                <element signature="e#1253#1254#0" expanded="true" />
-                <element signature="e#2996#2997#0" expanded="true" />
-                <element signature="e#3050#3051#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mall-order/src/main/java/com/yht/mall/order/service/OrderGoodsStockService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="95">
+              <caret line="19" column="148" selection-start-line="19" selection-start-column="148" selection-end-line="19" selection-end-column="148" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mall-order/src/main/java/com/yht/mall/order/controller/OrderInfoController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="157">
+              <caret line="39" column="45" lean-forward="true" selection-start-line="39" selection-start-column="45" selection-end-line="39" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mall-order/src/main/java/com/yht/mall/order/config/MybatisPlusConfig.java">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/mall-user/src/main/java/com/yht/malluser/config/MybatisPlusConfig.java">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -259,8 +209,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="FxmlFile" />
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -275,37 +225,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/mall-order/src/main/resources/banner.txt" />
-        <option value="$PROJECT_DIR$/mall-user/src/main/resources/banner.txt" />
-        <option value="$PROJECT_DIR$/mall-common/src/main/java/com/yht/common/DO/OrderProductDO.java" />
-        <option value="$PROJECT_DIR$/mall-order/src/main/java/com/yht/mall/order/dao/OrderProductDao.java" />
-        <option value="$PROJECT_DIR$/mall-order/src/main/java/com/yht/mall/order/service/OrderProductService.java" />
-        <option value="$PROJECT_DIR$/mall-order/src/main/java/com/yht/mall/order/service/impl/OrderProductSerivceImpl.java" />
-        <option value="$PROJECT_DIR$/mall-sys/src/main/java/com/yht/sys/service/OrderService.java" />
-        <option value="$PROJECT_DIR$/mall-sys/src/main/java/com/yht/sys/controller/OrderController.java" />
-        <option value="$PROJECT_DIR$/mall-order/src/main/java/com/yht/mall/order/controller/OrderProductController.java" />
-        <option value="$PROJECT_DIR$/mall-order/src/main/resources/Mapper/OrderInfoMapper.xml" />
-        <option value="$PROJECT_DIR$/mall-product/src/main/java/com/yht/mall/product/controller/GoodsController.java" />
-        <option value="$PROJECT_DIR$/mall-sys/src/main/java/com/yht/sys/service/MallGoodsService.java" />
-        <option value="$PROJECT_DIR$/mall-product/pom.xml" />
-        <option value="$PROJECT_DIR$/mall-order/pom.xml" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/mall-common/pom.xml" />
-        <option value="$PROJECT_DIR$/mall-sys/pom.xml" />
-        <option value="$PROJECT_DIR$/mall-sys/src/main/java/com/yht/sys/controller/MallGoodsController.java" />
-        <option value="$PROJECT_DIR$/mall-order/src/main/java/com/yht/mall/order/dao/OrderInfoDao.java" />
-        <option value="$PROJECT_DIR$/mall-common/src/main/java/com/yht/common/DO/OrderInfoDO.java" />
-        <option value="$PROJECT_DIR$/mall-sys/src/main/java/com/yht/sys/service/SysUserService.java" />
-        <option value="$PROJECT_DIR$/mall-user/src/main/java/com/yht/malluser/dao/UserDao.java" />
-        <option value="$PROJECT_DIR$/mall-product/src/main/resources/mapper/GoodMapper.xml" />
-        <option value="$PROJECT_DIR$/mall-user/src/main/java/com/yht/malluser/service/impl/UserServiceImpl.java" />
-        <option value="$PROJECT_DIR$/mall-user/src/main/java/com/yht/malluser/service/CaptchaService.java" />
-        <option value="$PROJECT_DIR$/mall-sys/src/main/java/com/yht/sys/utils/RedisUtils.java" />
-        <option value="$PROJECT_DIR$/mall-user/src/main/java/com/yht/malluser/utils/RedisUtils.java" />
-        <option value="$PROJECT_DIR$/mall-user/src/main/java/com/yht/malluser/service/impl/CaptchaServiceImpl.java" />
-        <option value="$PROJECT_DIR$/mall-user/src/main/java/com/yht/malluser/form/SysLoginForm.java" />
-        <option value="$PROJECT_DIR$/mall-user/src/main/java/com/yht/malluser/form/LoginForm.java" />
-        <option value="$PROJECT_DIR$/mall-common/src/main/java/com/yht/common/DO/MallUserTokenDO.java" />
         <option value="$PROJECT_DIR$/mall-common/src/main/java/com/yht/common/DO/SysUserTokenDO.java" />
         <option value="$PROJECT_DIR$/mall-user/src/main/resources/mapper/TokenMapper.xml" />
         <option value="$PROJECT_DIR$/mall-user/src/main/java/com/yht/malluser/dao/TokenDao.java" />
@@ -320,12 +239,43 @@
         <option value="$PROJECT_DIR$/mall-user/pom.xml" />
         <option value="$PROJECT_DIR$/mall-gateway/pom.xml" />
         <option value="$PROJECT_DIR$/mall-user/src/main/java/com/yht/malluser/controller/LoginController.java" />
-        <option value="$PROJECT_DIR$/mall-gateway/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/mall-user/src/main/java/com/yht/malluser/service/UserService.java" />
         <option value="$PROJECT_DIR$/mall-user/src/main/resources/mapper/UserMapper.xml" />
         <option value="$PROJECT_DIR$/mall-sys/src/main/java/com/yht/sys/controller/SysUserController.java" />
         <option value="$PROJECT_DIR$/mall-user/src/main/java/com/yht/malluser/controller/UserController.java" />
         <option value="$PROJECT_DIR$/mall-user/src/main/java/com/yht/malluser/config/KaptchaConfig.java" />
+        <option value="$PROJECT_DIR$/mall-product/src/main/java/com/yht/mall/product/service/impl/GoodsServiceImpl.java" />
+        <option value="$PROJECT_DIR$/mall-product/src/main/java/com/yht/mall/product/service/GoodsService.java" />
+        <option value="$PROJECT_DIR$/mall-product/src/main/java/com/yht/mall/product/controller/GoodsController.java" />
+        <option value="$PROJECT_DIR$/mall-order/src/main/java/com/yht/mall/order/service/CartService.java" />
+        <option value="$PROJECT_DIR$/mall-gateway/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/mall-product/src/main/resources/mapper/GoodMapper.xml" />
+        <option value="$PROJECT_DIR$/mall-common/src/main/java/com/yht/common/DO/CartDO.java" />
+        <option value="$PROJECT_DIR$/mall-order/src/main/java/com/yht/mall/order/service/impl/CartServiceImpl.java" />
+        <option value="$PROJECT_DIR$/mall-order/src/main/java/com/yht/mall/order/controller/CartController.java" />
+        <option value="$PROJECT_DIR$/mall-order/src/main/java/com/yht/mall/order/dao/OrderInfoDao.java" />
+        <option value="$PROJECT_DIR$/mall-order/src/main/java/com/yht/mall/order/service/GoodsStockService.java" />
+        <option value="$PROJECT_DIR$/mall-common/src/main/java/com/yht/common/DO/OrderInfoDO.java" />
+        <option value="$PROJECT_DIR$/mall-order/src/main/resources/mapper/CartMapper.xml" />
+        <option value="$PROJECT_DIR$/mall-order/pom.xml" />
+        <option value="$PROJECT_DIR$/mall-order/src/main/java/com/yht/mall/order/controller/OrderProductController.java" />
+        <option value="$PROJECT_DIR$/mall-order/src/main/java/com/yht/mall/order/service/OrderInfoService.java" />
+        <option value="$PROJECT_DIR$/mall-common/src/main/java/com/yht/common/DO/OrderProductDO.java" />
+        <option value="$PROJECT_DIR$/mall-order/src/main/java/com/yht/mall/order/controller/OrderInfoController.java" />
+        <option value="$PROJECT_DIR$/mall-order/src/main/java/com/yht/mall/order/MallOrderApplication.java" />
+        <option value="$PROJECT_DIR$/mall-order/src/main/java/com/yht/mall/order/dao/CartDao.java" />
+        <option value="$PROJECT_DIR$/mall-product/src/main/java/com/yht/mall/product/dao/GoodsDao.java" />
+        <option value="$PROJECT_DIR$/mall-product/src/main/java/com/yht/mall/product/dao/GoodsStockDao.java" />
+        <option value="$PROJECT_DIR$/mall-product/src/main/resources/mapper/GoodsStock.xml" />
+        <option value="$PROJECT_DIR$/mall-product/src/main/java/com/yht/mall/product/service/GoodsStockService.java" />
+        <option value="$PROJECT_DIR$/mall-order/src/main/resources/mapper/OrderInfoMapper.xml" />
+        <option value="$PROJECT_DIR$/mall-product/src/main/java/com/yht/mall/product/service/impl/GoodsStockServiceImpl.java" />
+        <option value="$PROJECT_DIR$/mall-product/src/main/java/com/yht/mall/product/controller/GoodsStockController.java" />
+        <option value="$PROJECT_DIR$/mall-order/src/main/java/com/yht/mall/order/service/OrderGoodsStockService.java" />
+        <option value="$PROJECT_DIR$/mall-order/src/main/java/com/yht/mall/order/service/impl/OrderInfoServiceImpl.java" />
+        <option value="$PROJECT_DIR$/mall-product/src/main/java/com/yht/mall/product/config/MybatisPlusConfig.java" />
+        <option value="$PROJECT_DIR$/mall-order/src/main/java/com/yht/mall/order/config/MybatisPlusConfig.java" />
+        <option value="$PROJECT_DIR$/mall-user/src/main/java/com/yht/malluser/config/MybatisPlusConfig.java" />
       </list>
     </option>
   </component>
@@ -421,8 +371,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -433,60 +381,25 @@
             <path>
               <item name="mall" type="b2602c69:ProjectViewProjectNode" />
               <item name="mall" type="462c0819:PsiDirectoryNode" />
-              <item name="mall-common" type="462c0819:PsiDirectoryNode" />
+              <item name="mall-order" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mall" type="b2602c69:ProjectViewProjectNode" />
               <item name="mall" type="462c0819:PsiDirectoryNode" />
-              <item name="mall-common" type="462c0819:PsiDirectoryNode" />
+              <item name="mall-order" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mall" type="b2602c69:ProjectViewProjectNode" />
               <item name="mall" type="462c0819:PsiDirectoryNode" />
-              <item name="mall-common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mall" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mall" type="462c0819:PsiDirectoryNode" />
-              <item name="mall-common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mall" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mall" type="462c0819:PsiDirectoryNode" />
-              <item name="mall-common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mall" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mall" type="462c0819:PsiDirectoryNode" />
-              <item name="mall-gateway" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mall" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mall" type="462c0819:PsiDirectoryNode" />
-              <item name="mall-gateway" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mall" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mall" type="462c0819:PsiDirectoryNode" />
-              <item name="mall-gateway" type="462c0819:PsiDirectoryNode" />
+              <item name="mall-order" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mall" type="b2602c69:ProjectViewProjectNode" />
               <item name="mall" type="462c0819:PsiDirectoryNode" />
-              <item name="mall-gateway" type="462c0819:PsiDirectoryNode" />
+              <item name="mall-order" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -494,70 +407,67 @@
             <path>
               <item name="mall" type="b2602c69:ProjectViewProjectNode" />
               <item name="mall" type="462c0819:PsiDirectoryNode" />
-              <item name="mall-gateway" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mall" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mall" type="462c0819:PsiDirectoryNode" />
-              <item name="mall-sys" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mall" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mall" type="462c0819:PsiDirectoryNode" />
-              <item name="mall-sys" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mall" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mall" type="462c0819:PsiDirectoryNode" />
-              <item name="mall-sys" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mall" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mall" type="462c0819:PsiDirectoryNode" />
-              <item name="mall-sys" type="462c0819:PsiDirectoryNode" />
+              <item name="mall-order" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="order" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mall" type="b2602c69:ProjectViewProjectNode" />
               <item name="mall" type="462c0819:PsiDirectoryNode" />
-              <item name="mall-sys" type="462c0819:PsiDirectoryNode" />
+              <item name="mall-order" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="sys" type="462c0819:PsiDirectoryNode" />
+              <item name="order" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mall" type="b2602c69:ProjectViewProjectNode" />
               <item name="mall" type="462c0819:PsiDirectoryNode" />
-              <item name="mall-sys" type="462c0819:PsiDirectoryNode" />
+              <item name="mall-order" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="sys" type="462c0819:PsiDirectoryNode" />
+              <item name="order" type="462c0819:PsiDirectoryNode" />
               <item name="controller" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mall" type="b2602c69:ProjectViewProjectNode" />
               <item name="mall" type="462c0819:PsiDirectoryNode" />
-              <item name="mall-sys" type="462c0819:PsiDirectoryNode" />
+              <item name="mall-order" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="sys" type="462c0819:PsiDirectoryNode" />
+              <item name="order" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mall" type="462c0819:PsiDirectoryNode" />
+              <item name="mall-order" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="order" type="462c0819:PsiDirectoryNode" />
               <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mall" type="b2602c69:ProjectViewProjectNode" />
               <item name="mall" type="462c0819:PsiDirectoryNode" />
-              <item name="mall-sys" type="462c0819:PsiDirectoryNode" />
+              <item name="mall-order" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="order" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mall" type="462c0819:PsiDirectoryNode" />
+              <item name="mall-order" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
@@ -565,11 +475,149 @@
             <path>
               <item name="mall" type="b2602c69:ProjectViewProjectNode" />
               <item name="mall" type="462c0819:PsiDirectoryNode" />
-              <item name="mall-sys" type="462c0819:PsiDirectoryNode" />
+              <item name="mall-order" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="mapper" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mall" type="462c0819:PsiDirectoryNode" />
+              <item name="mall-product" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mall" type="462c0819:PsiDirectoryNode" />
+              <item name="mall-product" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mall" type="462c0819:PsiDirectoryNode" />
+              <item name="mall-product" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mall" type="462c0819:PsiDirectoryNode" />
+              <item name="mall-product" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mall" type="462c0819:PsiDirectoryNode" />
+              <item name="mall-product" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="product" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mall" type="462c0819:PsiDirectoryNode" />
+              <item name="mall-product" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="product" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mall" type="462c0819:PsiDirectoryNode" />
+              <item name="mall-product" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="product" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mall" type="462c0819:PsiDirectoryNode" />
+              <item name="mall-product" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="product" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mall" type="462c0819:PsiDirectoryNode" />
+              <item name="mall-product" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="product" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mall" type="462c0819:PsiDirectoryNode" />
+              <item name="mall-product" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mall" type="462c0819:PsiDirectoryNode" />
+              <item name="mall-product" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mall" type="462c0819:PsiDirectoryNode" />
+              <item name="mall-sys" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mall" type="462c0819:PsiDirectoryNode" />
+              <item name="mall-sys" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mall" type="462c0819:PsiDirectoryNode" />
+              <item name="mall-sys" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mall" type="462c0819:PsiDirectoryNode" />
+              <item name="mall-sys" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mall" type="462c0819:PsiDirectoryNode" />
+              <item name="mall-sys" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="sys" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mall" type="462c0819:PsiDirectoryNode" />
+              <item name="mall-sys" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="sys" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mall" type="b2602c69:ProjectViewProjectNode" />
@@ -616,57 +664,12 @@
               <item name="malluser" type="462c0819:PsiDirectoryNode" />
               <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="mall" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mall" type="462c0819:PsiDirectoryNode" />
-              <item name="mall-user" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="malluser" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mall" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mall" type="462c0819:PsiDirectoryNode" />
-              <item name="mall-user" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="malluser" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mall" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mall" type="462c0819:PsiDirectoryNode" />
-              <item name="mall-user" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="malluser" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mall" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mall" type="462c0819:PsiDirectoryNode" />
-              <item name="mall-user" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mall" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mall" type="462c0819:PsiDirectoryNode" />
-              <item name="mall-user" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="mapper" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -676,7 +679,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1611826686293" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1612249696501" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -690,11 +693,11 @@
       <recent name="com.yht.sys" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.yht.malluser.config" />
+      <recent name="com.yht.mall.order.config" />
+      <recent name="com.yht.mall.product.config" />
       <recent name="mallgateway.gateway.config" />
       <recent name="com.yht.common.DO" />
-      <recent name="com.yht.malluser.form" />
-      <recent name="com.yht.malluser.config" />
-      <recent name="com.yht.malluser.utils" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\lenovo\Desktop\mall\mall-gateway\src\main\resources" />
@@ -722,7 +725,7 @@
     </option>
     <option name="contentProportion" value="0.22746071" />
   </component>
-  <component name="RunManager" selected="Spring Boot.GatewayApplication">
+  <component name="RunManager" selected="Spring Boot.MallProductApplication">
     <configuration name="MallSysApplicationTests.getPassWord" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
       <module name="mall-sys" />
       <extension name="coverage">
@@ -856,6 +859,11 @@
       <workItem from="1611715874798" duration="2919000" />
       <workItem from="1611798185114" duration="18656000" />
       <workItem from="1611839055944" duration="1097000" />
+      <workItem from="1611840646721" duration="82000" />
+      <workItem from="1611884866020" duration="19410000" />
+      <workItem from="1612010488938" duration="4063000" />
+      <workItem from="1612142590864" duration="19650000" />
+      <workItem from="1612229448996" duration="11567000" />
     </task>
     <task id="LOCAL-00001" summary="user类的crud">
       <created>1606379248306</created>
@@ -878,7 +886,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611496311478</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="all">
+      <created>1611840698641</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1611840698641</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -890,7 +905,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="286142000" />
+    <option name="totallyTimeSpent" value="340914000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -903,14 +918,15 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49413735" visible="true" weight="0.26758286" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49315068" visible="true" weight="0.28940988" />
       <window_info id="Structure" order="1" sideWeight="0.50501674" side_tool="true" weight="0.27878466" />
       <window_info id="设计器" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Capture Tool" order="4" />
       <window_info id="UI Designer" order="5" />
-      <window_info id="Favorites" order="6" sideWeight="0.5018587" side_tool="true" weight="0.28940988" />
+      <window_info id="Favorites" order="6" sideWeight="0.5068493" side_tool="true" weight="0.27485853" />
       <window_info id="Web" order="7" sideWeight="0.5018587" side_tool="true" weight="0.28940988" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -924,12 +940,12 @@
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.32899627" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50363785" side_tool="true" weight="0.45539033" />
       <window_info anchor="bottom" id="Version Control" order="11" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Spring" order="12" weight="0.32899627" />
-      <window_info anchor="bottom" id="缩略图" order="13" visible="true" weight="0.3283859" />
-      <window_info anchor="bottom" id="Messages" order="14" sideWeight="0.4995958" weight="0.29739776" />
-      <window_info anchor="bottom" id="调试" order="15" weight="0.23376623" />
-      <window_info anchor="bottom" id="Inspection Results" order="16" sideWeight="0.4995958" weight="0.32899627" />
-      <window_info active="true" anchor="bottom" id="Run Dashboard" order="17" sideWeight="0.49636218" visible="true" weight="0.17657992" />
+      <window_info active="true" anchor="bottom" id="Run Dashboard" order="12" sideWeight="0.49636218" visible="true" weight="0.32713756" />
+      <window_info anchor="bottom" id="Spring" order="13" weight="0.32899627" />
+      <window_info anchor="bottom" id="缩略图" order="14" visible="true" weight="0.3283859" />
+      <window_info anchor="bottom" id="Messages" order="15" sideWeight="0.4995958" weight="0.29739776" />
+      <window_info anchor="bottom" id="调试" order="16" weight="0.23376623" />
+      <window_info anchor="bottom" id="Inspection Results" order="17" sideWeight="0.4995958" weight="0.32899627" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.2497979" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -949,6 +965,7 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <MESSAGE value="user类的crud" />
     <MESSAGE value="系统管理的实现" />
     <MESSAGE value="all" />
@@ -959,374 +976,387 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/mall-user/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall-gateway/src/main/resources/application.properties" />
-    <entry file="file://$PROJECT_DIR$/mall-gateway/src/main/java/mallgateway/gateway/config/MallCorsConfiguration.java">
+    <entry file="file://$PROJECT_DIR$/mall-sys/src/main/java/com/yht/sys/service/impl/RoleServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-519">
-          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+        <state relative-caret-position="-266">
+          <caret line="33" column="16" selection-start-line="33" selection-start-column="16" selection-end-line="33" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mall-user/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="656">
-          <caret line="48" selection-start-line="48" selection-end-line="52" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall-gateway/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="30" column="33" selection-start-line="30" selection-start-column="33" selection-end-line="30" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall-gateway/src/main/resources/bootstrap.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall-gateway/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall-user/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
-          <folding>
-            <element signature="e#234#1244#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall-gateway/src/main/java/mallgateway/gateway/GatewayApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall-sys/src/main/java/com/yht/sys/controller/AbstractController.java" />
-    <entry file="file://$PROJECT_DIR$/mall-sys/src/main/java/com/yht/sys/controller/MenuController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="33" column="14" lean-forward="true" selection-start-line="33" selection-start-column="14" selection-end-line="33" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall-sys/src/main/java/com/yht/sys/controller/MallUserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-847">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall-sys/src/main/java/com/yht/sys/controller/MallStockController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-459">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall-sys/src/main/resources/mapper/UserRoleMapper.xml">
+    <entry file="file://$PROJECT_DIR$/mall-sys/src/main/java/com/yht/sys/service/SysLogService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
-          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall-sys/src/main/java/com/yht/sys/service/impl/UserRoleServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-205">
-          <caret line="15" column="26" lean-forward="true" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
-          <folding>
-            <element signature="e#500#501#0" expanded="true" />
-            <element signature="e#557#558#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall-sys/src/main/java/com/yht/sys/dao/TokenDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall-sys/src/main/java/com/yht/sys/dao/SysLogDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall-sys/src/main/java/com/yht/sys/dao/RoleMenuDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall-sys/src/main/java/com/yht/sys/dao/RoleDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall-sys/src/main/java/com/yht/sys/dao/MenuDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall-sys/src/main/java/com/yht/sys/service/OrderService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="16" column="17" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall-sys/src/main/java/com/yht/sys/dao/UserRoleDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall-common/src/main/java/com/yht/common/DO/SysUserTokenDO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall-common/src/main/java/com/yht/common/DO/UserDO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-610">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall-common/src/main/java/com/yht/common/DO/MenuDO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-459">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall-common/src/main/java/com/yht/common/DO/RoleDO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="605">
-          <caret line="39" column="33" selection-start-line="39" selection-start-column="23" selection-end-line="39" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall-common/src/main/java/com/yht/common/DO/RoleMenuDO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-124">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall-common/src/main/java/com/yht/common/DO/UserRoleDO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall-sys/src/main/java/com/yht/sys/service/MenuService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="19" column="12" lean-forward="true" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
+          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mall-sys/src/main/java/com/yht/sys/service/RoleService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+        <state relative-caret-position="-135">
+          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mall-sys/src/main/java/com/yht/sys/controller/RoleController.java">
+    <entry file="file://$PROJECT_DIR$/mall-sys/src/main/java/com/yht/sys/service/SysUserService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1150">
-          <caret line="32" column="44" lean-forward="true" selection-start-line="32" selection-start-column="44" selection-end-line="32" selection-end-column="44" />
+        <state relative-caret-position="-40">
+          <caret line="40" column="9" selection-start-line="40" selection-start-column="9" selection-end-line="40" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-sys/src/main/java/com/yht/sys/service/impl/SysUserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1323">
+          <caret line="69" column="16" selection-start-line="69" selection-start-column="16" selection-end-line="69" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-common/src/main/java/com/yht/common/DO/UserDO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-631">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mall-common/src/main/java/com/yht/common/DO/SysUserDO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+        <state relative-caret-position="-10">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mall-user/src/main/java/com/yht/malluser/controller/LoginController.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_151/src.zip!/java/util/UUID.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="57" column="18" selection-start-line="57" selection-start-column="18" selection-end-line="57" selection-end-column="34" />
+        <state relative-caret-position="-1157">
+          <caret line="140" column="23" selection-start-line="140" selection-start-column="23" selection-end-line="140" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-order/src/main/java/com/yht/mall/order/service/OrderProductService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="5" column="71" lean-forward="true" selection-start-line="5" selection-start-column="71" selection-end-line="5" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/baomidou/mybatis-plus-extension/3.4.1/mybatis-plus-extension-3.4.1.jar!/com/baomidou/mybatisplus/extension/service/IService.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="69" column="20" selection-start-line="69" selection-start-column="20" selection-end-line="69" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-common/src/main/java/com/yht/common/DO/CartDO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-24">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mall-sys/src/main/resources/mapper/UserMapper.xml">
+    <entry file="file://$PROJECT_DIR$/mall-order/src/main/java/com/yht/mall/order/service/impl/OrderProductSerivceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="567">
-          <caret line="21" column="4" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
+        <state relative-caret-position="27">
+          <caret line="12" column="80" lean-forward="true" selection-start-line="12" selection-start-column="80" selection-end-line="12" selection-end-column="80" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mall-user/src/main/resources/mapper/TokenMapper.xml">
+    <entry file="file://$PROJECT_DIR$/mall-order/src/main/java/com/yht/mall/order/dao/OrderProductDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="3" column="36" lean-forward="true" selection-start-line="3" selection-start-column="36" selection-end-line="3" selection-end-column="36" />
+        <state relative-caret-position="99">
+          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-sys/src/main/java/com/yht/sys/controller/MallGoodsController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="86" column="82" selection-start-line="86" selection-start-column="23" selection-end-line="86" selection-end-column="82" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-order/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="90" column="20" lean-forward="true" selection-start-line="90" selection-start-column="20" selection-end-line="90" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/fastjson/1.2.47/fastjson-1.2.47.jar!/com/alibaba/fastjson/JSONObject.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8369">
+          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/fastjson/1.2.47/fastjson-1.2.47.jar!/com/alibaba/fastjson/JSON.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="143" column="29" selection-start-line="143" selection-start-column="29" selection-end-line="143" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-order/src/main/java/com/yht/mall/order/controller/CartController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-common/src/main/java/com/yht/common/DO/OrderInfoDO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-883">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-sys/src/main/java/com/yht/sys/MallSysApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/com/baomidou/mybatis-plus-core/3.4.1/mybatis-plus-core-3.4.1.jar!/com/baomidou/mybatisplus/core/mapper/BaseMapper.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="30" column="6" selection-start-line="30" selection-start-column="6" selection-end-line="30" selection-end-column="6" />
+        <state relative-caret-position="117">
+          <caret line="34" column="12" selection-start-line="34" selection-start-column="12" selection-end-line="34" selection-end-column="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mall-user/src/main/java/com/yht/malluser/service/impl/UserServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/mall-order/src/main/java/com/yht/mall/order/dao/CartDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="70" column="32" selection-start-line="70" selection-start-column="32" selection-end-line="70" selection-end-column="32" />
-          <folding>
-            <element signature="e#889#890#0" expanded="true" />
-            <element signature="e#949#950#0" expanded="true" />
-            <element signature="e#2415#2416#0" expanded="true" />
-            <element signature="e#2463#2464#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="57">
+          <caret line="19" column="9" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mall-user/src/main/java/com/yht/malluser/dao/UserDao.java">
+    <entry file="file://$PROJECT_DIR$/mall-common/src/main/java/com/yht/common/DO/GoodsDO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
-          <caret line="18" column="9" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
+        <state relative-caret-position="-207">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mall-user/src/main/resources/mapper/UserMapper.xml">
+    <entry file="file://$PROJECT_DIR$/mall-common/src/main/java/com/yht/common/DO/GoodsStockDO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
-          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
+        <state relative-caret-position="-459">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mall-common/src/main/java/com/yht/common/utils/JwtUtils.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_151/src.zip!/java/util/List.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="82" column="23" selection-start-line="82" selection-start-column="23" selection-end-line="82" selection-end-column="23" />
+        <state relative-caret-position="117">
+          <caret line="110" column="17" selection-start-line="110" selection-start-column="17" selection-end-line="110" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mall-sys/src/main/java/com/yht/sys/controller/SysLogController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall-sys/src/main/java/com/yht/sys/dao/UserDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="31" selection-start-line="31" selection-end-line="34" selection-end-column="82" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall-user/src/main/java/com/yht/malluser/MallUserApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall-sys/src/main/java/com/yht/sys/controller/LoginController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="837">
-          <caret line="51" column="29" selection-start-line="51" selection-start-column="29" selection-end-line="51" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall-user/src/main/java/com/yht/malluser/service/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1026">
-          <caret line="45" column="11" selection-start-line="45" selection-start-column="11" selection-end-line="45" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall-user/src/main/java/com/yht/malluser/config/KaptchaConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="18" column="64" selection-start-line="18" selection-start-column="64" selection-end-line="18" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall-user/src/main/java/com/yht/malluser/controller/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="91" column="13" selection-start-line="91" selection-start-column="13" selection-end-line="91" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall-sys/src/main/java/com/yht/sys/service/SysUserService.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_151/src.zip!/java/lang/Long.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="27">
-          <caret line="40" column="9" selection-start-line="40" selection-start-column="9" selection-end-line="40" selection-end-column="9" />
+          <caret line="53" column="19" selection-start-line="53" selection-start-column="19" selection-end-line="53" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/baomidou/mybatis-plus-extension/3.4.1/mybatis-plus-extension-3.4.1.jar!/com/baomidou/mybatisplus/extension/service/IService.class">
+    <entry file="file://$PROJECT_DIR$/mall-product/src/main/resources/mapper/GoodMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="73" column="20" selection-start-line="73" selection-start-column="20" selection-end-line="73" selection-end-column="20" />
+        <state relative-caret-position="837">
+          <caret line="31" column="33" lean-forward="true" selection-start-line="31" selection-start-column="33" selection-end-line="31" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-order/src/main/resources/mapper/CartMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-product/src/main/java/com/yht/mall/product/service/GoodsService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-675">
+          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-order/src/main/java/com/yht/mall/order/service/CartService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="18" column="9" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
           <folding>
-            <element signature="e#2842#2843#0" expanded="true" />
-            <element signature="e#2923#2924#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mall-sys/src/main/java/com/yht/sys/service/impl/SysUserServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/mall-product/src/main/java/com/yht/mall/product/dao/GoodsDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="29" column="63" selection-start-line="29" selection-start-column="63" selection-end-line="29" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-order/src/main/java/com/yht/mall/order/service/impl/CartServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="313">
+          <caret line="28" column="34" selection-start-line="28" selection-start-column="34" selection-end-line="28" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-product/src/main/java/com/yht/mall/product/service/GoodsStockService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="43" column="52" selection-start-line="43" selection-start-column="52" selection-end-line="43" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-common/src/main/java/com/yht/common/DO/OrderProductDO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="109">
+          <caret line="27" column="19" selection-start-line="27" selection-start-column="19" selection-end-line="27" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-order/src/main/java/com/yht/mall/order/MallOrderApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+          <folding>
+            <element signature="e#503#504#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-product/src/main/java/com/yht/mall/product/controller/GoodsController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="59" column="37" selection-start-line="59" selection-start-column="32" selection-end-line="59" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-order/src/main/resources/mapper/OrderInfoMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
-          <caret line="57" column="20" lean-forward="true" selection-start-line="57" selection-start-column="20" selection-end-line="57" selection-end-column="20" />
+          <caret line="16" column="35" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-order/src/main/java/com/yht/mall/order/dao/OrderInfoDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="20" column="23" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-order/src/main/java/com/yht/mall/order/service/OrderInfoService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="21" column="14" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-product/src/main/java/com/yht/mall/product/controller/GoodsStockController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="57" column="94" selection-start-line="57" selection-start-column="94" selection-end-line="57" selection-end-column="94" />
           <folding>
-            <element signature="e#1085#1086#0" expanded="true" />
-            <element signature="e#1145#1146#0" expanded="true" />
-            <element signature="e#1205#1206#0" expanded="true" />
-            <element signature="e#1253#1254#0" expanded="true" />
-            <element signature="e#2996#2997#0" expanded="true" />
-            <element signature="e#3050#3051#0" expanded="true" />
+            <element signature="e#1387#1388#0" expanded="true" />
+            <element signature="e#1449#1450#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mall-sys/src/main/java/com/yht/sys/controller/SysUserController.java">
+    <entry file="file://$PROJECT_DIR$/mall-product/src/main/resources/mapper/GoodsStock.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="93" column="22" selection-start-line="93" selection-start-column="8" selection-end-line="93" selection-end-column="22" />
+        <state relative-caret-position="122">
+          <caret line="32" column="71" lean-forward="true" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="71" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-product/src/main/java/com/yht/mall/product/dao/GoodsStockDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="33" column="9" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-product/src/main/java/com/yht/mall/product/service/impl/GoodsStockServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="123">
+          <caret line="58" column="49" selection-start-line="58" selection-start-column="49" selection-end-line="58" selection-end-column="49" />
+          <folding>
+            <element signature="e#1244#1245#0" expanded="true" />
+            <element signature="e#1295#1296#0" expanded="true" />
+            <element signature="e#1355#1356#0" expanded="true" />
+            <element signature="e#1393#1394#0" expanded="true" />
+            <element signature="e#1726#1727#0" expanded="true" />
+            <element signature="e#1781#1782#0" expanded="true" />
+            <element signature="e#1857#1858#0" expanded="true" />
+            <element signature="e#1915#1916#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-order/src/main/java/com/yht/mall/order/service/OrderGoodsStockService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="19" column="148" selection-start-line="19" selection-start-column="148" selection-end-line="19" selection-end-column="148" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-order/src/main/java/com/yht/mall/order/controller/OrderProductController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="18" column="54" selection-start-line="18" selection-start-column="54" selection-end-line="18" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-order/src/main/java/com/yht/mall/order/service/impl/OrderInfoServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="278">
+          <caret line="126" column="61" selection-start-line="126" selection-start-column="61" selection-end-line="126" selection-end-column="61" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-sys/src/main/java/com/yht/sys/config/MybatisPlusConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-50">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-product/src/main/java/com/yht/mall/product/config/MybatisPlusConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-134" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-order/src/main/java/com/yht/mall/order/controller/OrderInfoController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="39" column="45" lean-forward="true" selection-start-line="39" selection-start-column="45" selection-end-line="39" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-order/src/main/java/com/yht/mall/order/config/MybatisPlusConfig.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-user/src/main/java/com/yht/malluser/config/MybatisPlusConfig.java">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
   <component name="masterDetails">
